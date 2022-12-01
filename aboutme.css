@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ropa Sans', sans-serif;
+
+}
+.bg {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/bgimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+body {
+    animation: transitionin 1s;
+}
+.wrapper {
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+
+}
+
+
+/* 
+-------------------------------------
+NAV
+--------------------------------------
+ */
+
+
+.nav_box {
+    background-color: rgba(0,0, 0, 0.25 );
+    width: 100%;
+    min-height:70px;
+}
+.home_menu {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo {
+    display: flex;
+    min-height: inherit;
+    
+}
+.logo a {
+    
+    min-height: inherit;
+    letter-spacing: 2px;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s;
+    padding: 0 20px;
+}
+.logo a:hover {
+    background-color:rgba(53, 55, 59, 0.5);
+}
+
+
+.menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 2rem;
+    min-height: 70px;
+}
+.menu li {
+    min-height: inherit;
+    
+}
+.menu  a {
+    flex-basis: 200px;
+    line-height: 70px;
+    display: inline-block;
+    min-height: inherit;
+text-decoration: none;
+color: white;
+font-size: 22px;
+text-transform: uppercase;
+transition: all 0.5s;
+padding: 0 20px;
+
+}
+.menu a:hover {
+    background-color: rgba(53, 55, 59, 0.5);
+}
+
+
+/* 
+-------------------------------------------------
+NAV
+--------------------------------------------------
+ */
+
+ .header_box {
+    min-width: 100%;
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.header h2 {
+    font-size: 64px;
+    color: white;
+    
+}
+.header {
+    display: flex;
+    max-width:80% ;
+}
+
+
+
+/* 
+------------------------------------
+HEADER
+------------------------------------
+ */
+
+ .footer {
+    position:absolute;
+    display: flex;
+    flex-wrap: wrap;
+    display: inline-block;
+    padding: 5px 10px 5px 0;
+    color: white;
+    background-color: rgba(0,0, 0, 0.5 );
+    bottom: 0;
+ }
+ @keyframes transitionin {
+    from {
+        background-color: rgba(0, 0, 0, 0.25);
+        opacity: 0;
+        transform: translateY(50vh);
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0);
+        opacity: 1;
+        transform: translateY(0);
+    }
+ }
